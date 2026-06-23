@@ -1,0 +1,26 @@
+# Airflow DAG settings
+
+training_pipeline:
+  dag_id: "training_pipeline"
+  schedule: "0 2 * * *"       # daily at 2am
+  catchup: false
+  max_active_runs: 1
+  tags:
+    - ml
+    - training
+
+monitoring_pipeline:
+  dag_id: "monitoring_pipeline"
+  schedule: "0 * * * *"       # every hour
+  catchup: false
+  tags:
+    - ml
+    - monitoring
+
+retraining_pipeline:
+  dag_id: "retraining_pipeline"
+  schedule: null               # triggered by monitoring, not schedule
+  catchup: false
+  tags:
+    - ml
+    - retraining

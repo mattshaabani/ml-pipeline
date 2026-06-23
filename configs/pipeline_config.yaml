@@ -1,0 +1,51 @@
+# Dataset settings
+data:
+  dataset_name: "adult"
+  source_url: "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data"
+  target_column: "income"
+  test_size: 0.2
+  val_size: 0.1
+  random_state: 42
+
+# Feature settings
+features:
+  numerical:
+    - age
+    - fnlwgt
+    - education_num
+    - capital_gain
+    - capital_loss
+    - hours_per_week
+  categorical:
+    - workclass
+    - education
+    - marital_status
+    - occupation
+    - relationship
+    - race
+    - sex
+    - native_country
+  target: income
+
+# Training settings
+training:
+  models:
+    - logistic_regression
+    - random_forest
+    - xgboost
+    - lightgbm
+  cv_folds: 5
+  scoring_metric: "roc_auc"
+  random_state: 42
+
+# MLflow settings
+mlflow:
+  experiment_name: "adult-income-prediction"
+  tracking_uri: "sqlite:///mlflow.db"
+  model_registry_name: "adult-income-model"
+
+# Retraining settings
+retraining:
+  drift_threshold: 0.1
+  performance_threshold: 0.85
+  retrain_on_drift: true

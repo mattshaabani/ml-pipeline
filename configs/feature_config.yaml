@@ -1,0 +1,29 @@
+# Feature engineering settings
+
+scaling:
+  method: "standard"          # standard, minmax, robust
+  numerical_features:
+    - age
+    - fnlwgt
+    - education_num
+    - capital_gain
+    - capital_loss
+    - hours_per_week
+
+encoding:
+  method: "onehot"            # onehot, ordinal, target
+  categorical_features:
+    - workclass
+    - education
+    - marital_status
+    - occupation
+    - relationship
+    - race
+    - sex
+    - native_country
+  handle_unknown: "ignore"
+
+feature_store:
+  provider: "feast"
+  store_path: "data/features/feature_store"
+  online_store: "sqlite"
