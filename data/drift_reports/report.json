@@ -1,0 +1,219 @@
+{
+  "overall_drift_detected": true,
+  "drift_rate": 0.7857,
+  "drifted_features": [
+    "age",
+    "fnlwgt",
+    "education_num",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "workclass",
+    "education",
+    "marital_status",
+    "occupation",
+    "relationship"
+  ],
+  "total_features_checked": 14,
+  "feature_results": {
+    "age": {
+      "type": "numerical",
+      "ks_test": {
+        "ks_statistic": 1.0,
+        "p_value": 0.0,
+        "drift_detected": "True",
+        "method": "ks_test"
+      },
+      "psi": {
+        "psi": 29.0994,
+        "drift_detected": true,
+        "method": "psi"
+      },
+      "wasserstein": {
+        "wasserstein_distance": 39.7335,
+        "normalized_distance": 11.1742,
+        "drift_detected": "True",
+        "method": "wasserstein"
+      },
+      "drift_detected": "True"
+    },
+    "fnlwgt": {
+      "type": "numerical",
+      "ks_test": {
+        "ks_statistic": 0.1151,
+        "p_value": 0.0,
+        "drift_detected": "True",
+        "method": "ks_test"
+      },
+      "psi": {
+        "psi": 0.0535,
+        "drift_detected": false,
+        "method": "psi"
+      },
+      "wasserstein": {
+        "wasserstein_distance": 21586.7794,
+        "normalized_distance": 0.1978,
+        "drift_detected": "True",
+        "method": "wasserstein"
+      },
+      "drift_detected": "True"
+    },
+    "education_num": {
+      "type": "numerical",
+      "ks_test": {
+        "ks_statistic": 0.0889,
+        "p_value": 0.0,
+        "drift_detected": "True",
+        "method": "ks_test"
+      },
+      "psi": {
+        "psi": 0.3118,
+        "drift_detected": true,
+        "method": "psi"
+      },
+      "wasserstein": {
+        "wasserstein_distance": 0.7933,
+        "normalized_distance": 0.3591,
+        "drift_detected": "True",
+        "method": "wasserstein"
+      },
+      "drift_detected": "True"
+    },
+    "capital_gain": {
+      "type": "numerical",
+      "ks_test": {
+        "ks_statistic": 0.0899,
+        "p_value": 0.0,
+        "drift_detected": "True",
+        "method": "ks_test"
+      },
+      "psi": {
+        "psi": 0.1083,
+        "drift_detected": false,
+        "method": "psi"
+      },
+      "wasserstein": {
+        "wasserstein_distance": 1384.9631,
+        "normalized_distance": 0.436,
+        "drift_detected": "True",
+        "method": "wasserstein"
+      },
+      "drift_detected": "True"
+    },
+    "capital_loss": {
+      "type": "numerical",
+      "ks_test": {
+        "ks_statistic": 0.0301,
+        "p_value": 0.0107,
+        "drift_detected": "True",
+        "method": "ks_test"
+      },
+      "psi": {
+        "psi": 0.0616,
+        "drift_detected": false,
+        "method": "psi"
+      },
+      "wasserstein": {
+        "wasserstein_distance": 58.6131,
+        "normalized_distance": 0.2033,
+        "drift_detected": "True",
+        "method": "wasserstein"
+      },
+      "drift_detected": "True"
+    },
+    "hours_per_week": {
+      "type": "numerical",
+      "ks_test": {
+        "ks_statistic": 0.0437,
+        "p_value": 0.0,
+        "drift_detected": "True",
+        "method": "ks_test"
+      },
+      "psi": {
+        "psi": 0.0645,
+        "drift_detected": false,
+        "method": "psi"
+      },
+      "wasserstein": {
+        "wasserstein_distance": 1.7242,
+        "normalized_distance": 0.1382,
+        "drift_detected": "True",
+        "method": "wasserstein"
+      },
+      "drift_detected": "True"
+    },
+    "workclass": {
+      "type": "categorical",
+      "psi": {
+        "psi": 0.4659,
+        "drift_detected": true,
+        "method": "categorical_psi"
+      },
+      "drift_detected": true
+    },
+    "education": {
+      "type": "categorical",
+      "psi": {
+        "psi": 0.389,
+        "drift_detected": true,
+        "method": "categorical_psi"
+      },
+      "drift_detected": true
+    },
+    "marital_status": {
+      "type": "categorical",
+      "psi": {
+        "psi": 3.0352,
+        "drift_detected": true,
+        "method": "categorical_psi"
+      },
+      "drift_detected": true
+    },
+    "occupation": {
+      "type": "categorical",
+      "psi": {
+        "psi": 0.2398,
+        "drift_detected": true,
+        "method": "categorical_psi"
+      },
+      "drift_detected": true
+    },
+    "relationship": {
+      "type": "categorical",
+      "psi": {
+        "psi": 2.1928,
+        "drift_detected": true,
+        "method": "categorical_psi"
+      },
+      "drift_detected": true
+    },
+    "race": {
+      "type": "categorical",
+      "psi": {
+        "psi": 0.0249,
+        "drift_detected": false,
+        "method": "categorical_psi"
+      },
+      "drift_detected": false
+    },
+    "sex": {
+      "type": "categorical",
+      "psi": {
+        "psi": 0.056,
+        "drift_detected": false,
+        "method": "categorical_psi"
+      },
+      "drift_detected": false
+    },
+    "native_country": {
+      "type": "categorical",
+      "psi": {
+        "psi": 0.0914,
+        "drift_detected": false,
+        "method": "categorical_psi"
+      },
+      "drift_detected": false
+    }
+  },
+  "should_retrain": true
+}

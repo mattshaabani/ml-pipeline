@@ -44,7 +44,6 @@ def get_logistic_regression(**kwargs) -> LogisticRegression:
         "max_iter":   1000,
         "solver":     "lbfgs",
         "random_state": 42,
-        "n_jobs":     -1,
     }
     defaults.update(kwargs)
     return LogisticRegression(**defaults)
