@@ -1,0 +1,33 @@
+{
+  "numerical_means": {
+    "age": 38.56726044226044,
+    "education_num": 10.08002808002808,
+    "capital_gain": 1048.4131712881713,
+    "capital_loss": 88.43098455598455,
+    "hours_per_week": 40.48701298701299
+  },
+  "numerical_stds": {
+    "age": 13.602647733054344,
+    "education_num": 2.577601096667538,
+    "capital_gain": 7250.344850359324,
+    "capital_loss": 406.7957191470294,
+    "hours_per_week": 12.416584304335755
+  },
+  "numerical_medians": {
+    "age": 37.0,
+    "education_num": 10.0,
+    "capital_gain": 0.0,
+    "capital_loss": 0.0,
+    "hours_per_week": 40.0
+  },
+  "categorical_modes": {
+    "workclass": "Private",
+    "marital_status": "Married-civ-spouse",
+    "occupation": "Prof-specialty",
+    "relationship": "Husband",
+    "race": "White",
+    "sex": "Male",
+    "native_country": "United-States"
+  },
+  "n_samples": 22792
+}
